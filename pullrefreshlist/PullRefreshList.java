@@ -170,21 +170,23 @@ public class PullRefreshList extends ListView implements OnScrollListener{
 	}
 	
 	public void stopRefresh() {
-		if (mPullRefreshing == true) {
+		if (isAllowHeader && mPullRefreshing == true) {
 			mPullRefreshing = false;
 			resetHeaderHeight();
 		}
 	}
 	
 	public void stopLoadMore() {
-		if (mPullLoading == true) {
+		if (isAllowFooter && mPullLoading == true) {
 			mPullLoading = false;
 			mListFooterLayout.setState(ListFooterLayout.STATE_NORMAL);
 		}
 	}
 
 	public void setRefreshTime(String time) {
-		mHeaderTimeView.setText(time);
+		if(isAllowHeader){
+			mHeaderTimeView.setText(time);
+		}
 	}
 	
 	@Override
