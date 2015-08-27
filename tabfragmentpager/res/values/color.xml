@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title_color">#000000</color>
+    <color name="title_layoutbackground">#fff6f6f6</color>
+    <color name="light_grey">#ececec</color>
+    <color name="tabline_background">#ffe0e0e0</color>
+    <color name="indicator_background">#2dacfd</color>
+    <color name="white">#ffffff</color>
+</resources>
